@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SayHello!</title>
+
+<style type="text/css">
+
+body{
+	margin: 0px auto;
+	width: 800px;
+	background-color: #fff;
+}
+
+#wrapper{
+	position: absolute;
+	top:100px;
+	width:700px;
+	height: 300px;
+	padding: 25px;
+	background-color: #fff;
+	border: 1px solid #333;
+}
+	
+#text{
+	font-family: Laksaman;
+	text-align: center;
+	color: #333;
+	padding: 20px;
+}
+
+#niceButton{
+
+	margin: auto;
+	display: block;
+	width: 250px;
+	height: 40px;
+	font-family: Laksaman;
+	font-weight: 200;
+	color: #fff;
+	background-color: #333;
+	border: 0px solid #333;
+	cursor: pointer;
+}
+
+
+#NameForm{
+	margin: auto;
+	display: block;
+	font-family: Laksaman;
+	font-weight: 200;
+	width: 250px;
+	height: 40px;
+	color: #333;
+	border: 1px solid #333;
+	padding: 5px;
+}
+
+#ShowText{
+	text-align: center;
+	font-family: Laksaman;
+	font-weight: 200;
+	color: #333;
+	font-size: 20px;
+}
+
+</style>
+</head>
+<body>
+<div id="wrapper">
+	<h1 id = "text">SayHello</h1>
+	<h id = "ShowText"></h1>
+	<input type="input" id = "NameForm" name="nameBox" placeholder="What's your name?"><br>
+	<button id = "niceButton" onclick = SayHello()>Say Hello</buttonid>
+
+	<script type="text/javascript">
+
+	function SayHello(){
+		var PersonName;
+		PersonName = document.getElementById("NameForm").value;
+		if(PersonName == ""){
+			text = "<p align = center ><font color=red>Fill in a name please!</font></p>";
+
+		}else{
+			
+			text = "<p align = center>Hello " + PersonName + "!</p>";
+		
+		}
+		document.getElementById("ShowText").innerHTML = text;
+	}
+
+	</script>
+	
+</div>
+</body>
+</html>
