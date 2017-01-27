@@ -1,0 +1,191 @@
+<html>
+<head><title>Having Fun with boxes Bruh!</title>
+<style type="text/css">
+
+body{
+  margin: 0px auto;
+  width: 800px;
+  height: auto;
+  background-color: #fff;
+}
+
+h1{
+  padding: 5px;
+  font-weight: 200;
+  font-family: Laksaman;
+  color: #333;
+}
+
+.wrapper-container{
+  margin: 0px auto;
+  width: 800px;
+  height: auto;
+  background-color: #f9f9f9;
+  position: absolute;
+  top:50px;
+  box-shadow: 3px 3px 18px #aa02ff;
+}
+
+.image-container{
+  width: 100%;
+  height: 200px;
+  background-color: #333;
+}
+
+.info-container{
+  width: 100%;
+  height: auto;
+}
+
+
+.info-box{
+  font-family: Laksaman;
+  font-size: 15px;
+  color: #333;
+  word-wrap: normal;
+}
+
+#left-tab{
+  padding-left: 2em;
+}
+
+.Pop-art-btn{
+  transition: 0.2s;
+  margin-left: 2em;
+  margin-bottom: 3em;
+  width: 150px;
+  height: 50px;
+  border-radius: 1px;
+  border: 0px solid;
+  background-color: #e80ba5;
+  font-family: impact;
+  color: #fff;
+  cursor: pointer;
+}
+
+.Pop-art-btn:hover{
+  transition: 0.2s;
+  background-color: #e80b4a;
+}
+
+#pop-art-heading{
+  font-family: impact;
+  padding-left: 1em;
+  padding-top: 2em;
+  color: #e80b4a;
+}
+
+#image-one{
+  width: 200px;
+  height: 100%;
+  background-color: #fff;
+  padding: 10px;
+  background-image: url('https://s-media-cache-ak0.pinimg.com/736x/e8/0d/47/e80d47df67b12faba6cf16372b7afb81.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+}
+
+#image-two{
+  width: 200px;
+  height: 200px;;
+  padding: 10px;
+  background-color: #fff;
+  background-image: url('http://data.whicdn.com/images/481056/large.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top:0px;
+  left:210px;
+
+}
+
+#image-three{
+  width: 390px;
+  height: 220px;;
+  background-color: #fff;
+  background-image: url('http://tantasmarias.com/wp-content/uploads/2015/05/b6b99c1ed4300d5e69bc82c14f912b00.jpg?w=449&h=256');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top:0px;
+  left:410px;
+
+}
+
+#image-three:hover{
+  filter: blur(50);
+
+}
+
+.footer-box{
+  width: 100%;
+  height: 50px;
+  background-color: #e80b4a;
+}
+
+#popart-graffiti{
+  margin:0px;
+  padding: 0px;
+  width: 100%;
+  height: 300px;
+  background-color:#333;
+}
+
+#graffiti-img{
+  transition: 0.5s;
+  filter: blur(5px);
+  width:100%;
+  height: 100%;
+  background-size: 50%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+#graffiti-img:hover{
+  transition: 0.5s;
+  filter: blur(0px);
+}
+
+#credits{
+  font-family: Laksaman;
+  font-size: 13px;
+  padding: 15px;
+  text-decoration: underline;
+  color: #fff;
+}
+
+</style>
+</head>
+<body>
+<h1 align=center>POP CULTURE</h1>
+<div class="wrapper-container">
+      <div class="image-container">
+        <div id="image-one"></div>
+        <div id="image-two"></div>
+        <div id="image-three"></div>
+      </div>
+      <div class="info-container">
+            <div class = "info-box">
+                <h2 id = "pop-art-heading">Pop Art : Back to the 50s</h2>
+                <p id="left-tab">
+                  Pop art is an art movement that emerged in the mid-1950s
+                  in Britain and the late
+                  1950s in the United States. Among the early artists that shaped the pop art
+                  movement were Eduardo Paolozzi and Richard Hamilton in Britain, and Larry Rivers,
+                  Robert Rauschenberg and Jasper Johns among others in the United States.</p><br>
+                  <div id="popart-graffiti"><img src="https://i.vimeocdn.com/video/390161636.jpg?mw=1920&mh=1080&q=70" id="graffiti-img"></div>
+                  <p id="left-tab">
+                  Pop art presented a challenge to traditions of fine art by including imagery from popular
+                  culture such as advertising and news. In pop art, material is sometimes visually
+                  removed from its known context, isolated, and/or combined with unrelated material.
+                </p>
+            </div>
+      </div>
+      <button class= "Pop-art-btn">Pop It!</button>
+      <div class="footer-box"><p align="center" id="credits">Pop art layout by freezer9</p></div>
+</div>
+
+</body>
+</html
