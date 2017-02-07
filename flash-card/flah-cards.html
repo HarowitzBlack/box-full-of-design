@@ -1,0 +1,132 @@
+<html>
+<head><title>flash cards</title>
+
+<style type = "text/css">
+
+body{
+  margin: 0px auto;
+  width : 800px;
+  height: 100%;
+  background-color: #f9f9f9;
+}
+
+h1{
+  padding: 5px;
+  font-family: fantasy ;
+  font-size: 18px;
+  font-weight: 900;
+  word-wrap: normal;
+  color: #333;
+}
+
+.wrapper{
+  margin: 0px auto;
+  width: 800px;
+  height: 600px;
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.flash-card{
+  margin: 0px auto;
+  display: block;
+  width: 400px;
+  height: auto;
+  background-color: #fff;
+  box-shadow: 5px 4px 20px #333;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+
+.image-holder{
+  width: 100%;
+  height: 300px;
+  background-color: #afb;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+  transform: rotate(0deg);
+}
+
+.image-holder:hover{
+  transition: 0.3s;
+  transform: rotate(0deg);
+
+}
+
+.flash-image{
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.3s;
+  filter: grayscale(0%);
+
+}
+
+.flash-image:hover{
+  transition: 0.3s;
+  filter: grayscale(0%);
+}
+
+.title-holder{
+  padding: 2px;
+  text-align: left;
+}
+
+.info-holder{
+  font-family: cursive;
+  font-weight: 100;
+  font-size: 14px;
+  text-align: justify;
+  color: #333;
+  padding: 5px;
+}
+
+.join-btn{
+  width: 100%;
+  height: 70px;
+  border: 2px solid royalblue;
+  background-color: #fff;
+  color: royalblue;
+  font-family: fantasy;
+  border-radius: 4px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.join-btn:hover{
+  transition: 0.3s;
+  background-color: royalblue;
+  color: #fff;
+}
+
+</style>
+
+</head>
+<body>
+  <div class="wrapper">
+      <div class= "flash-card">
+        <div class="image-holder"><img class = "flash-image" src="landscp3.jpg"></div>
+        <div class = "title-holder"><h1>The way I see the world is Beautiful</h1></div>
+        <div class = "info-holder">
+          <p>A scene gives a serine feeling of being lost in a our own world.
+          The sky speaks it all with its glowing orange clouds. The sun shines
+          from the east, glarring its light on the clouds. The evergreen trees
+          hide the sun, like a mother who protects her child. The reflective waters
+          mirror the sky, when I look at it, I'm lost.</p>
+        </div>
+        <button class = "join-btn">Join the hype!</button>
+        <!end the card>
+      </div>
+
+  </div>
+
+</body>
+</html>
