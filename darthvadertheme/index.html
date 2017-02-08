@@ -1,0 +1,121 @@
+<html>
+<head><title>Darth Vader theme</title>
+<style type="text/css">
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+body{
+  width:100%;
+  margin: 0px auto;
+  height: 100%;
+  background: black;
+  padding: 0px;
+}
+
+.wrapper{
+  margin: 0px;
+  width: 100%;
+  height: 2000px;
+  background: url('darthvader.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0.4;
+  display: block;
+}
+
+#welcome-cont{
+  margin-top: 0px;
+  padding: 0px;
+  text-align: center;
+  position: relative;
+  top: 200px;
+}
+
+#welcome-msg{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 100;
+  font-size: 42px;
+  color: #fff;
+}
+
+#join-cont{
+  text-align: center;
+  position: relative;
+  top: 300px;
+}
+
+#join-btn{
+  transition: 0.3s;
+  width: 250px;
+  height: 70px;
+  font-family: 'Inconsolata', monospace;
+  background-color: #ed0404;
+  color: #fff;
+  border: 0px solid transparent;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+#join-btn:active{
+  transition: 0.3s;
+  transform: translateX(10px);
+  background-color: #ed0404;
+  color : #fff;
+
+}
+
+.navigation-bar{
+  text-align: center;
+  margin: 100px;
+  position: relative;
+  top: 300px;
+}
+
+#Nav-tabs{
+  transition: 0.3s;
+  font-family: 'Inconsolata', monospace;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#Nav-tabs:hover{
+  transition: 0.3s;
+  text-decoration: underline;
+}
+
+#pos-nav1{
+  position: relative;
+  left: -200px;
+}
+
+#pos-nav2{
+  position: relative;
+  top: -50px;
+}
+
+#pos-nav3{
+  position: relative;
+  top:-100px;
+  left: 200px;
+}
+
+</style>
+</head>
+<body>
+<div class='wrapper'>
+  <div id = "welcome-cont"><h1 id='welcome-msg'>The force is strong with you.</h1></div>
+  <div id = "join-cont"><button id="join-btn">Join the dark side</button></div>
+  <div class = "navigation-bar">
+    <div id="Nav-tabs"><p id = "pos-nav1">Projects</p></div>
+    <div id="Nav-tabs"><p id = "pos-nav2">Blogs</p></div>
+    <div id="Nav-tabs"><p id = "pos-nav3">Contact</p></div>
+
+  </div>
+</div>
+</body>
+</html>
