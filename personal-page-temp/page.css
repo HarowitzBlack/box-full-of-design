@@ -1,0 +1,119 @@
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+/* for small screen*/
+body{
+    margin: 0px auto;
+    width: 100%;
+    height: 100%;
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    margin: 0px auto;
+    width: auto;
+    height: auto;
+    background-color: #f9f9f9;
+    padding: 0px;
+
+}
+
+h1{
+    font-family: sans-serif;
+    font-weight: 200;
+    color: #333;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-family: 'Amatic SC', cursive;
+}
+
+
+.display-image{
+    width: 100%;
+    height: 50%;
+    background-color: #845;
+    background-size: cover;
+    background-image: url("https://photographybyji.files.wordpress.com/2014/12/n20140917-dsc07468.jpg");
+    background-repeat: no-repeat;
+}
+
+/* for huge screen devices */
+@media only screen and (min-width: 480px) {
+    body{
+        transition: 0.2s;
+        background-color: #f9f9f9;
+        overflow-x: hidden;
+    }
+    .container{
+        margin: 0px auto;
+        width: 980px;
+        height: auto;
+        background-color: #f9f9f9;
+        padding: 0px;
+        box-shadow: 5px 5px 15px #333;
+
+    }
+    /* main cover image*/
+    .display-image{
+        width: 100%;
+        height: 500px;
+        background-color: #845;
+        background-image: url("https://photographybyji.files.wordpress.com/2014/12/n20140917-dsc07468.jpg");
+    }
+    .image-list{
+        margin:25px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: auto;
+        height: auto;
+        background-color: #f9f9f9;
+    }
+    .imagebox{
+        padding: 0px;
+        width: 370px;
+        height: 280px;
+        margin: 25px;
+        background-color: #f9f9f9;
+        box-shadow: 5px 5px 15px #333;
+    }
+    .imageprop{
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .about-me{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        word-wrap: normal;
+    }
+    p{
+        padding: 10px;
+        font-family: 'Indie Flower', cursive;
+        font-size: 18px;
+        word-wrap: normal;
+        color: #333;
+    }
+    .color-name{
+        color: #42f48f;
+        word-wrap: normal;
+    }
+
+
+
+
+}
