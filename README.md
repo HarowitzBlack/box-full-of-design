@@ -1,5 +1,5 @@
-# javascript-code
+# website templates
 
-_Contains my javascript code_
+Just some templates
 
 :octocat:
