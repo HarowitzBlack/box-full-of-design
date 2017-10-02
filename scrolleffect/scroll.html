@@ -1,0 +1,153 @@
+<html>
+<head>
+    <title>Scroll</title>
+    <style type="text/css" rel="stylesheet">
+
+    @import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+    body{
+        width: 800px;
+        height: 800px;
+        background-color: #f9f9f9;
+        margin: 0px auto;
+    }
+
+    #phone-case{
+        position: relative;
+        top:70px;
+        margin: 0px auto;
+        width: 300px;
+        height: 600px;
+        overflow: hidden;
+        background: -moz-linear-gradient(right,#cc0e9c,#cc0d53);
+        background-image: url("https://i.pinimg.com/originals/e8/6d/0f/e86d0f606e8e181f51f0c1ba62299e57.png");
+        background-size: 85%;
+        background-repeat: no-repeat;
+        background-position: 55% 59%;
+    }
+
+    #screen{
+        width: 300px;
+        height: 700px;
+        background-image: url("http://s1.r29static.com//bin/entry/e54/720x1280/1789424/image.png");
+        background-size: 100%;
+        overflow: hidden;
+        animation: scrollanim 10s infinite;
+    }
+
+    #phone-wrap{
+        overflow: hidden;
+
+    }
+
+    @keyframes scrollanim {
+
+        0% {
+            margin-top:0px;
+        }
+
+
+
+        40%{
+            margin-top:-200px;
+
+        }
+
+        50%{
+            margin-top:-400px;
+
+        }
+
+        60%{
+            margin-top:-500px;
+
+        }
+
+        65%{
+            margin-top:-700px;
+
+        }
+
+        70%{
+            margin-top:-700px;
+
+        }
+
+        90%{
+            margin-top:-500px;
+
+        }
+
+        95%{
+            margin-top:-350px;
+
+        }
+
+        99%{
+            margin-top:-150px;
+
+        }
+
+        100% {
+            margin-top:-100px;
+        }
+
+    }
+
+    #info{
+        position: absolute;
+        width: 300px;
+        height: 400px;
+        top:100px;
+        left:900px;
+
+    }
+
+    h1{
+        color:#111;
+        font-family: 'Oxygen', sans-serif;
+        font-weight: 900;
+
+    }
+
+    p{
+        color:#666;
+        font-family: 'Oxygen', sans-serif;
+        font-weight: 100;
+
+    }
+
+    button{
+        width: 150px;
+        height: 60px;
+        background-color: #000;
+        color:#fff;
+        border:none;
+        cursor: pointer;
+    }
+
+    button:hover{
+        box-shadow: 2px 2px 2px #666;
+    }
+
+    </style>
+</head>
+<body>
+    <div id = "wrapper">
+        <div id = "info">
+            <h1>New Way to use the phone</h1>
+            <p> The way you connect with your phone is the way you live. Using this device
+            you can connect with the people you love and care, share photos, music, documents
+        and much more.</p>
+        <button>Order now</button>
+        </div>
+
+        <div id = "phone-case">
+            <div id ="phone-wrap">
+                <img src = "ii.png" width = "300" height = "600" />
+                <div id = "screen"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
