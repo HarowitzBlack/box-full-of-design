@@ -1,0 +1,31 @@
+.nav-item{
+color: rgb(0,0,0);
+
+}
+.navbar-nav{
+font-size:175%;
+font-weight: bold;
+
+
+}
+.nav-link{
+
+
+}
+
+body {
+    padding-top: 70px;
+}
+.row{
+  padding: 10px;
+}
+footer {
+
+  background-color: rgb(192, 192, 192);
+}
+
+img{
+
+ margin: 10px 10px 10px 10px;
+
+}
