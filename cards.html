@@ -1,6 +1,13 @@
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Cards</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <style type="text/css" rel="stylesheet">
 
     @import url('https://fonts.googleapis.com/css?family=Oxygen');
@@ -105,7 +112,8 @@
         padding-right: 15px;
     }
 
-    .btn:hover{
+    .btn:hover,
+    .btn:focus{
         border:0px solid #333;
         background-color: #24e28c;
     }
@@ -115,19 +123,23 @@
         flex-direction: row;
     }
 
-    #cent{
+    .icon{
         margin-top: 10px;
         margin-left:15px;
     }
 
     .btn-txt{
-        margin-top: -24px;
-        margin-left: 50px;
+        display: inline-block;
+        margin-left: 1px;
         color: #fff;
         font-weight: bold;
+        position: relative;
+        top: -10px;
     }
 
-    #cc{
+    .btn--like,
+    .btn--like:hover,
+    .btn--like:focus{
         background-color: #fff;
     }
 
@@ -142,9 +154,9 @@
 
             <div class="box">
                 <div class = "img-container">
-                    <img src="http://www.fubiz.net/wp-content/uploads/2014/11/Amazing-City-Lights-Illustrations-6.jpg" class = "img-fit" />
+                    <img alt="" src="http://www.fubiz.net/wp-content/uploads/2014/11/Amazing-City-Lights-Illustrations-6.jpg" class = "img-fit" />
                 </div>
-                <h2>San Francisco Tour bot</h2>
+                <h2 id="title-1">San Francisco Tour bot</h2>
                 <div class = "desp">
                     <p>
                         SF tour bot helps tourists to travel places in
@@ -154,22 +166,22 @@
                     </p>
                 </div>
                 <div class = "bottom-btn-cont">
-                    <!buy button>
-                    <div class = "btn">
-                        <i class="material-icons"  id = "cent">add_shopping_cart</i>
-                        <p class = "btn-txt">I want this</p>
-                    </div>
-                    <div class = "btn" id = "cc">
-                        <i class="em em-heart" id = "cent"></i>
-                    </div>
+                    <!-- buy button -->
+                    <button class = "btn" aria-describedby="title-1">
+                        <i class="material-icons icon" aria-hidden="true">add_shopping_cart</i>
+                        <span class = "btn-txt">I want this</span>
+                    </button>
+                    <button class = "btn btn--like" aria-label="I like this" aria-describedby="title-1">
+                        <i class="em em-heart icon" aria-hidden="true"></i>
+                    </button>
                 </div>
             </div>
 
             <div class="box">
                 <div class = "img-container">
-                    <img src="https://i.pinimg.com/736x/3b/67/ff/3b67ffc7024f5de3aa7d85f3c4c7453d--flat-illustration-character-illustration.jpg" class = "img-fit" />
+                    <img alt="" src="https://i.pinimg.com/736x/3b/67/ff/3b67ffc7024f5de3aa7d85f3c4c7453d--flat-illustration-character-illustration.jpg" class = "img-fit" />
                 </div>
-                <h2>Dogger</h2>
+                <h2 id="title-2">Dogger</h2>
                 <div class = "desp">
                     <p>
                         A Bot for finding dogs. Dogs are good life mates,
@@ -178,22 +190,22 @@
                     </p>
                 </div>
                 <div class = "bottom-btn-cont">
-                    <!buy button>
-                    <div class = "btn">
-                        <i class="material-icons"  id = "cent">add_shopping_cart</i>
-                        <p class = "btn-txt">I want this</p>
-                    </div>
-                    <div class = "btn" id = "cc">
-                        <i class="em em-heart" id = "cent"></i>
-                    </div>
+                    <!-- buy button -->
+                    <button class = "btn" aria-describedby="title-2">
+                        <i class="material-icons icon" aria-hidden="true">add_shopping_cart</i>
+                        <span class = "btn-txt">I want this</span>
+                    </button>
+                    <button class = "btn btn--like" aria-label="I like this" aria-describedby="title-2">
+                        <i class="em em-heart icon" aria-hidden="true"></i>
+                    </button>
                 </div>
             </div>
 
             <div class="box">
                 <div class = "img-container">
-                    <img src="https://wallpaperscraft.com/image/sunglasses_reflection_sun_114183_602x339.jpg" class = "img-fit" />
+                    <img alt="" src="https://wallpaperscraft.com/image/sunglasses_reflection_sun_114183_602x339.jpg" class = "img-fit" />
                 </div>
-                <h2>Go Glass</h2>
+                <h2 id="title-3">Go Glass</h2>
                 <div class = "desp">
                     <p>
                         Go Glass bot suggests you the best eyewear
@@ -202,36 +214,36 @@
                     </p>
                 </div>
                 <div class = "bottom-btn-cont">
-                    <!buy button>
-                    <div class = "btn">
-                        <i class="material-icons"  id = "cent">add_shopping_cart</i>
-                        <p class = "btn-txt">I want this</p>
-                    </div>
-                    <div class = "btn" id = "cc">
-                        <i class="em em-heart" id = "cent"></i>
-                    </div>
+                    <!-- buy button -->
+                    <button class = "btn" aria-describedby="title-3">
+                        <i class="material-icons icon" aria-hidden="true">add_shopping_cart</i>
+                        <span class = "btn-txt">I want this</span>
+                    </button>
+                    <button class = "btn btn--like" aria-label="I like this" aria-describedby="title-3">
+                        <i class="em em-heart icon" aria-hidden="true"></i>
+                    </button>
                 </div>
             </div>
 
             <div class="box">
                 <div class = "img-container">
-                    <img src="https://media.timeout.com/images/103849730/630/472/image.jpg" class = "img-fit" />
+                    <img alt="" src="https://media.timeout.com/images/103849730/630/472/image.jpg" class = "img-fit" />
                 </div>
-                <h2>Eat-Street-Meet</h2>
+                <h2 id="title-4">Eat-Street-Meet</h2>
                 <div class = "desp">
                     <p>
-                        
+
                     </p>
                 </div>
                 <div class = "bottom-btn-cont">
-                    <!buy button>
-                    <div class = "btn">
-                        <i class="material-icons"  id = "cent">add_shopping_cart</i>
-                        <p class = "btn-txt">I want this</p>
-                    </div>
-                    <div class = "btn" id = "cc">
-                        <i class="em em-heart" id = "cent"></i>
-                    </div>
+                    <!-- buy button -->
+                    <button class = "btn" aria-describedby="title-4">
+                        <i class="material-icons icon" aria-hidden="true">add_shopping_cart</i>
+                        <span class = "btn-txt">I want this</span>
+                    </button>
+                    <button class = "btn btn--like" aria-label="I like this" aria-describedby="title-4">
+                        <i class="em em-heart icon" aria-hidden="true"></i>
+                    </button>
                 </div>
             </div>
 
