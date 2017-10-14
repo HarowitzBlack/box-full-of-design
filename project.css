@@ -9,8 +9,9 @@ font-weight: bold;
 
 }
 .nav-link{
-
-
+    color: black !important;
+    font-family: Helvetica, sans-serif;
+    font-size: 28px;
 }
 
 body {
@@ -28,4 +29,13 @@ img{
 
  margin: 10px 10px 10px 10px;
 
+}
+
+a:focus {
+    outline: 1px dotted #212121 !important;
+    outline: 5px auto -webkit-focus-ring-color !important;
+}
+
+.text-xs-center {
+    text-align: center;
 }
