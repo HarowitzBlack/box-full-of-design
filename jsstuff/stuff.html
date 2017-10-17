@@ -1,0 +1,54 @@
+
+<html>
+<meta charset="UTF-8">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+    <h1 id="Hello">Hello</h1>
+    <p id="hi"></p>
+    <input type="text" id="entry_box" />
+    <h3 id="notif"></h3>
+    <button onclick="ChangeType()">Click me to change the feilds</button>
+    <button onclick="ChangeUI()">Change this crap UI</button>
+</body>
+<script>
+
+    var state = "text";
+    var hello_txt = document.getElementById("Hello");
+    var notif_text = document.getElementById("notif");
+    var field_box = document.getElementById("entry_box");
+    function ChangeType(){
+        // if the user clicks it becomes pwd
+        // if the user clicks again it becomes txt
+        notif_text.style.color = "#126345";
+        notif_text.style.fontweight = 100;
+        if(state == "text"){
+            state = "password";
+            document.getElementById("entry_box").setAttribute("type","password");
+            notif_text.innerHTML = "Changed to password field";
+        }else{
+            state = "text";
+            document.getElementById("entry_box").setAttribute("type","text");
+            notif_text.innerHTML = "Changed to text field";
+        }
+
+    }
+
+    function ChangeUI(){
+
+        hello_txt.style.color = "#333";
+        hello_txt.style.fontFamily = "Montserrat, sans-serif";
+        hello_txt.style.fontweight = 100;
+
+        field_box.style.borderRadius = "0px";
+        field_box.style.height = "30px";
+        field_box.style.border = "none";
+
+        notif_text.style.fontFamily = "Montserrat,sans-serif";
+
+    }
+
+
+</script>
+</html>
