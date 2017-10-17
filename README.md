@@ -16,7 +16,7 @@ Any human on earth!
 
 # Contributers 👩‍🚀👨‍🎨
 
-* HarowitzBlack
-* Svinkle
-* xVanjaZ
-* Benbigmac
+* [HarowitzBlack](https://github.com/HarowitzBlack)
+* [Svinkle](https://github.com/Svinkle)
+* [xVanjaZ](https://github.com/xVanjaZ)
+* [Benbigmac](https://github.com/Benbigmac)
